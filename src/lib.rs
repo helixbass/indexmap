@@ -85,6 +85,8 @@ extern crate std;
 use alloc::vec::{self, Vec};
 
 mod arbitrary;
+#[cfg(feature = "gc")]
+mod gc;
 #[macro_use]
 mod macros;
 mod equivalent;

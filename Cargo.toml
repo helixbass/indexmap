@@ -16,6 +16,7 @@ bench = false
 
 [dependencies]
 arbitrary = { version = "1.0", optional = true, default-features = false }
+gc = { version = "0.4.1", optional = true, default-features = false }
 quickcheck = { version = "1.0", optional = true, default-features = false }
 serde = { version = "1.0", optional = true, default-features = false }
 rayon = { version = "1.5.3", optional = true }
@@ -53,7 +54,7 @@ no-dev-version = true
 tag-name = "{{version}}"
 
 [package.metadata.docs.rs]
-features = ["arbitrary", "quickcheck", "serde", "rayon"]
+features = ["arbitrary", "gc", "quickcheck", "serde", "rayon"]
 
 [workspace]
 members = ["test-nostd", "test-serde"]

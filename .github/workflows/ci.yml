@@ -21,6 +21,8 @@ jobs:
           - rust: stable
             features: arbitrary
           - rust: stable
+            features: gc
+          - rust: stable
             features: quickcheck
           - rust: stable
             features: rayon
